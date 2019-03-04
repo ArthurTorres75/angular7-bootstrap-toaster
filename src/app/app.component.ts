@@ -7,11 +7,19 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Base2';
+  title = 'Angular 7';
   constructor(private toastr: ToastrService) {
   }
   showSuccess() {
-    console.log('toaster');
     this.toastr.success('Mundo cruel', 'Hola');
+  }
+  showInfo() {
+    this.toastr.info('Mundo cruel', 'Hola');
+  }
+  showWarning() {
+    this.toastr.warning('Mundo cruel', 'Hola');
+  }
+  showError() {
+    this.toastr.error('Mundo cruel', 'Hola');
   }
 }
